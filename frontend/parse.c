@@ -312,7 +312,7 @@ static int getIntValue(char const* token, char const* arg, int* ptr)
     char *_EndPtr=0;
     long d = strtol(arg, &_EndPtr, 10);
     if (ptr != 0) {
-        *ptr = d;
+        *ptr = (int)d;
     }
     return evaluateArgument(token, arg, _EndPtr);
 }
@@ -341,13 +341,13 @@ set_id3tag(lame_global_flags* gfp, int type, char const* str)
 {
     switch (type)
     {
-        case 'a': return id3tag_set_artist(gfp, str), 0;
-        case 't': return id3tag_set_title(gfp, str), 0;
-        case 'l': return id3tag_set_album(gfp, str), 0;
+		case 'a': return (void)(id3tag_set_artist(gfp, str)), 0;
+		case 't': return (void)(id3tag_set_title(gfp, str)), 0;
+		case 'l': return (void)(id3tag_set_album(gfp, str)), 0;
         case 'g': return id3tag_set_genre(gfp, str);
-        case 'c': return id3tag_set_comment(gfp, str), 0;
+		case 'c': return (void)(id3tag_set_comment(gfp, str)), 0;
         case 'n': return id3tag_set_track(gfp, str);
-        case 'y': return id3tag_set_year(gfp, str), 0;
+		case 'y': return (void)(id3tag_set_year(gfp, str)), 0;
         case 'v': return id3tag_set_fieldvalue(gfp, str);
     }
     return 0;
@@ -1416,7 +1416,7 @@ set_id3_albumart(lame_t gfp, char const* file_name)
     if (file_name == 0) {
         return 0;
     }
-    fpi = lame_fopen(file_name, "rb");
+    fpi = /*lame_*/fopen(file_name, "rb");
     if (!fpi) {
         ret = 1;
     }
@@ -1477,6 +1477,27 @@ static int dev_only_without_arg(char const* str, char const* token, int* argIgno
     return 0;
 }
 
+
+int
+is_mpeg_file_format(int input_file_format)
+{
+	switch (input_file_format) {
+		case sf_mp1:
+			return 1;
+		case sf_mp2:
+			return 2;
+		case sf_mp3:
+			return 3;
+		case sf_mp123:
+			return -1;
+		default:
+			break;
+	}
+	return 0;
+}
+
+
+
 /* Ugly, NOT final version */
 
 #define T_IF(str)          if ( 0 == local_strcasecmp (token,str) ) {
@@ -1492,7 +1513,7 @@ static int dev_only_without_arg(char const* str, char const* token, int* argIgno
                            } else if (dev_only_with_arg(str,token,nextArg,&argIgnored,&argUsed)) {
 
 
-static int
+ int
 parse_args_(lame_global_flags * gfp, int argc, char **argv,
            char *const inPath, char *const outPath, char **nogap_inPath, int *num_nogap)
 {
@@ -2001,7 +2022,7 @@ parse_args_(lame_global_flags * gfp, int argc, char **argv,
                     nogap_tags = 1;
 
                 T_ELIF("nogapout")
-                    int const arg_n = strnlen(nextArg, PATH_MAX);
+                    int const arg_n = (int)strnlen(nextArg, PATH_MAX);
                     if (arg_n >= PATH_MAX) {
                         error_printf("%s: %s argument length (%d) exceeds limit (%d)\n", ProgramName, token, arg_n, PATH_MAX);
                         return -1;
@@ -2011,7 +2032,7 @@ parse_args_(lame_global_flags * gfp, int argc, char **argv,
                     argUsed = 1;
 
                 T_ELIF("out-dir")
-                    int const arg_n = strnlen(nextArg, PATH_MAX);
+                    int const arg_n = (int)strnlen(nextArg, PATH_MAX);
                     if (arg_n >= PATH_MAX) {
                         error_printf("%s: %s argument length (%d) exceeds limit (%d)\n", ProgramName, token, arg_n, PATH_MAX);
                         return -1;
@@ -2608,9 +2629,9 @@ dump_argv(int argc, char** argv)
 
 int parse_args(lame_t gfp, int argc, char **argv, char *const inPath, char *const outPath, char **nogap_inPath, int *num_nogap)
 {
-    char   *str_argv[512], *str;
-    int     str_argc, ret;
-    str = lame_getenv("LAMEOPT");
+	char   *str_argv[512], *str = NULL;
+	int     str_argc=0, ret;
+	str = lame_getenv("LAMEOPT");
     str_argc = string_to_argv(str, str_argv, dimension_of(str_argv));
     str_argc = merge_argv(argc, argv, str_argc, str_argv, dimension_of(str_argv));
 #ifdef DEBUG
