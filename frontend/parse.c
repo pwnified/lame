@@ -2632,9 +2632,6 @@ int parse_args(lame_t gfp, int argc, char **argv, char *const inPath, char *cons
 	char   *str_argv[512], *str = NULL;
 	int     str_argc=0, ret;
 	str = lame_getenv("LAMEOPT");
-	if (!str) {
-		return 0; // shut analyse up
-	}
     str_argc = string_to_argv(str, str_argv, dimension_of(str_argv));
     str_argc = merge_argv(argc, argv, str_argc, str_argv, dimension_of(str_argv));
 #ifdef DEBUG
