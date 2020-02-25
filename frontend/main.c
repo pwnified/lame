@@ -24,7 +24,7 @@
 /* $Id: main.c,v 1.131 2017/08/12 18:56:15 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include <assert.h>

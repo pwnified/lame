@@ -23,7 +23,7 @@
 /* $Id: util.c,v 1.159 2017/09/06 15:07:30 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include <float.h>

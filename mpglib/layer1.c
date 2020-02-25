@@ -24,7 +24,7 @@
 /* $Id: layer1.c,v 1.31 2017/08/23 13:22:23 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include <assert.h>

@@ -24,7 +24,7 @@
 
 /* $Id: quantize_pvt.c,v 1.175 2017/09/06 15:07:30 robert Exp $ */
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 

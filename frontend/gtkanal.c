@@ -22,7 +22,7 @@
 /* $Id: gtkanal.c,v 1.50 2017/08/28 12:48:39 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include <gtk/gtk.h>
@@ -1119,7 +1119,7 @@ key_press_event(GtkWidget * widget, GdkEventKey * event)
 
 /*! Get the mp3x version string. */
 /*!
-  \param void
+  
   \return a pointer to a string which describes the version of mp3x.
 */
 const char *

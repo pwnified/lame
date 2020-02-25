@@ -23,7 +23,7 @@
 /* $Id: layer3.c,v 1.69 2017/08/20 20:06:57 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include <stdlib.h>

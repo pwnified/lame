@@ -23,7 +23,7 @@
 /* $Id: parse.c,v 1.307 2017/09/26 12:25:07 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include <assert.h>

@@ -22,7 +22,7 @@
 /* $Id: tables.c,v 1.29 2011/05/07 16:05:17 rbrito Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include "machine.h"

@@ -23,7 +23,7 @@
 /* $Id: timestatus.c,v 1.61 2013/03/20 20:38:43 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 

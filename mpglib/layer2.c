@@ -23,7 +23,7 @@
 /* $Id: layer2.c,v 1.34 2017/08/22 23:31:07 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #include "common.h"

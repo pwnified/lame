@@ -8,7 +8,7 @@
 /* $Id: amiga_mpega.c,v 1.3 2005/11/01 13:01:56 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 #ifdef AMIGA_MPEGA

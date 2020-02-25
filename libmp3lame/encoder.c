@@ -26,7 +26,7 @@
 /* $Id: encoder.c,v 1.114 2017/08/26 10:54:57 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 

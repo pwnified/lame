@@ -25,7 +25,7 @@
 /* $Id: rtp.c,v 1.24 2011/05/07 16:05:17 rbrito Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 #ifdef HAVE_STDINT_H

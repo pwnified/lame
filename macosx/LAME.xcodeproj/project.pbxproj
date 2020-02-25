@@ -9,6 +9,36 @@
 /* Begin PBXBuildFile section */
 		8D07F2BE0486CC7A007CD1D0 /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
 		8D07F2C00486CC7A007CD1D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		A468EA412404C2710003DBFE /* LAMER.m in Sources */ = {isa = PBXBuildFile; fileRef = A468EA402404C2710003DBFE /* LAMER.m */; };
+		A468EA422404C2710003DBFE /* LAMER.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A468EA3F2404C2710003DBFE /* LAMER.h */; };
+		A468EA462404C30C0003DBFE /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C109A39A5E001379B8 /* bitstream.c */; };
+		A468EA472404C3350003DBFE /* encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C409A39A5E001379B8 /* encoder.c */; };
+		A468EA482404C3350003DBFE /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C609A39A5E001379B8 /* fft.c */; };
+		A468EA492404C3350003DBFE /* gain_analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C809A39A5E001379B8 /* gain_analysis.c */; };
+		A468EA4A2404C3350003DBFE /* id3tag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D509A39A5E001379B8 /* id3tag.c */; };
+		A468EA4B2404C3350003DBFE /* lame.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D909A39A5E001379B8 /* lame.c */; };
+		A468EA4C2404C3350003DBFE /* newmdct.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E109A39A5E001379B8 /* newmdct.c */; };
+		A468EA4D2404C3350003DBFE /* presets.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E309A39A5E001379B8 /* presets.c */; };
+		A468EA4E2404C3350003DBFE /* psymodel.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E409A39A5E001379B8 /* psymodel.c */; };
+		A468EA4F2404C3350003DBFE /* quantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E609A39A5E001379B8 /* quantize.c */; };
+		A468EA502404C3350003DBFE /* quantize_pvt.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E809A39A5E001379B8 /* quantize_pvt.c */; };
+		A468EA512404C3350003DBFE /* reservoir.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EA09A39A5E001379B8 /* reservoir.c */; };
+		A468EA522404C3350003DBFE /* set_get.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EC09A39A5E001379B8 /* set_get.c */; };
+		A468EA532404C3350003DBFE /* tables.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EE09A39A5E001379B8 /* tables.c */; };
+		A468EA542404C3350003DBFE /* takehiro.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F009A39A5E001379B8 /* takehiro.c */; };
+		A468EA552404C3350003DBFE /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F109A39A5E001379B8 /* util.c */; };
+		A468EA562404C3350003DBFE /* vbrquantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F309A39A5E001379B8 /* vbrquantize.c */; };
+		A468EA572404C3350003DBFE /* VbrTag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F509A39A5E001379B8 /* VbrTag.c */; };
+		A468EA582404C3350003DBFE /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F709A39A5E001379B8 /* version.c */; };
+		A468EA592404C3460003DBFE /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08A09A39A55001379B8 /* common.c */; };
+		A468EA5A2404C3460003DBFE /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08C09A39A55001379B8 /* dct64_i386.c */; };
+		A468EA5B2404C3460003DBFE /* decode_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08E09A39A55001379B8 /* decode_i386.c */; };
+		A468EA5C2404C3460003DBFE /* interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09209A39A55001379B8 /* interface.c */; };
+		A468EA5D2404C3460003DBFE /* layer1.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09509A39A55001379B8 /* layer1.c */; };
+		A468EA5E2404C3460003DBFE /* layer2.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09709A39A55001379B8 /* layer2.c */; };
+		A468EA5F2404C3460003DBFE /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09909A39A55001379B8 /* layer3.c */; };
+		A468EA602404C3460003DBFE /* tabinit.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0A209A39A55001379B8 /* tabinit.c */; };
+		A468EA722404C96F0003DBFE /* mpglib_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E009A39A5E001379B8 /* mpglib_interface.c */; };
 		EA0A6AD40BB84E38003C87B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */; };
 		EA498C8D0DE5E37B00250F0E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
 		EA8CC08809A39A49001379B8 /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,11 +104,27 @@
 		EA8CC12F09A39A5E001379B8 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F809A39A5E001379B8 /* version.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A468EA3B2404C2710003DBFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A468EA422404C2710003DBFE /* LAMER.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAME_Prefix.pch; sourceTree = "<group>"; };
 		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D07F2C80486CC7A007CD1D0 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A468EA3D2404C2710003DBFE /* libLAMER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLAMER.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A468EA3F2404C2710003DBFE /* LAMER.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAMER.h; sourceTree = "<group>"; };
+		A468EA402404C2710003DBFE /* LAMER.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAMER.m; sourceTree = "<group>"; };
+		A468EA612404C3E20003DBFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		EA498C8C0DE5E37B00250F0E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		EA8CC08709A39A49001379B8 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lame.h; path = ../include/lame.h; sourceTree = "<group>"; };
@@ -145,6 +191,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A468EA3A2404C2710003DBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA0A6AD20BB84E32003C87B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				8D07F2C80486CC7A007CD1D0 /* LAME.framework */,
+				A468EA3D2404C2710003DBFE /* libLAMER.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +224,7 @@
 				08FB77ACFE841707C02AAC07 /* Source */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				A468EA3E2404C2710003DBFE /* LAMER */,
 				034768DDFF38A45A11DB9C8B /* Products */,
 			);
 			name = LAME;
@@ -202,6 +257,15 @@
 				EA8CC08909A39A55001379B8 /* mpglib */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		A468EA3E2404C2710003DBFE /* LAMER */ = {
+			isa = PBXGroup;
+			children = (
+				A468EA3F2404C2710003DBFE /* LAMER.h */,
+				A468EA402404C2710003DBFE /* LAMER.m */,
+			);
+			path = LAMER;
 			sourceTree = "<group>";
 		};
 		EA8CC08909A39A55001379B8 /* mpglib */ = {
@@ -347,13 +411,37 @@
 			productReference = 8D07F2C80486CC7A007CD1D0 /* LAME.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A468EA3C2404C2710003DBFE /* LAMER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A468EA432404C2710003DBFE /* Build configuration list for PBXNativeTarget "LAMER" */;
+			buildPhases = (
+				A468EA392404C2710003DBFE /* Sources */,
+				A468EA3A2404C2710003DBFE /* Frameworks */,
+				A468EA3B2404C2710003DBFE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LAMER;
+			productName = LAMER;
+			productReference = A468EA3D2404C2710003DBFE /* libLAMER.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					A468EA3C2404C2710003DBFE = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = FUJX4L72NH;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "LAME" */;
 			compatibilityVersion = "Xcode 2.4";
@@ -361,7 +449,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
-				English,
+				Base,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* LAME */;
 			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
@@ -369,6 +457,7 @@
 			projectRoot = "";
 			targets = (
 				8D07F2BC0486CC7A007CD1D0 /* LAME */,
+				A468EA3C2404C2710003DBFE /* LAMER */,
 			);
 		};
 /* End PBXProject section */
@@ -420,13 +509,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A468EA392404C2710003DBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A468EA5E2404C3460003DBFE /* layer2.c in Sources */,
+				A468EA582404C3350003DBFE /* version.c in Sources */,
+				A468EA572404C3350003DBFE /* VbrTag.c in Sources */,
+				A468EA4E2404C3350003DBFE /* psymodel.c in Sources */,
+				A468EA722404C96F0003DBFE /* mpglib_interface.c in Sources */,
+				A468EA552404C3350003DBFE /* util.c in Sources */,
+				A468EA602404C3460003DBFE /* tabinit.c in Sources */,
+				A468EA412404C2710003DBFE /* LAMER.m in Sources */,
+				A468EA542404C3350003DBFE /* takehiro.c in Sources */,
+				A468EA462404C30C0003DBFE /* bitstream.c in Sources */,
+				A468EA4F2404C3350003DBFE /* quantize.c in Sources */,
+				A468EA482404C3350003DBFE /* fft.c in Sources */,
+				A468EA5B2404C3460003DBFE /* decode_i386.c in Sources */,
+				A468EA5F2404C3460003DBFE /* layer3.c in Sources */,
+				A468EA472404C3350003DBFE /* encoder.c in Sources */,
+				A468EA5D2404C3460003DBFE /* layer1.c in Sources */,
+				A468EA532404C3350003DBFE /* tables.c in Sources */,
+				A468EA4C2404C3350003DBFE /* newmdct.c in Sources */,
+				A468EA5C2404C3460003DBFE /* interface.c in Sources */,
+				A468EA522404C3350003DBFE /* set_get.c in Sources */,
+				A468EA4D2404C3350003DBFE /* presets.c in Sources */,
+				A468EA4B2404C3350003DBFE /* lame.c in Sources */,
+				A468EA5A2404C3460003DBFE /* dct64_i386.c in Sources */,
+				A468EA592404C3460003DBFE /* common.c in Sources */,
+				A468EA562404C3350003DBFE /* vbrquantize.c in Sources */,
+				A468EA502404C3350003DBFE /* quantize_pvt.c in Sources */,
+				A468EA492404C3350003DBFE /* gain_analysis.c in Sources */,
+				A468EA4A2404C3350003DBFE /* id3tag.c in Sources */,
+				A468EA512404C3350003DBFE /* reservoir.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
 		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C1667FE841158C02AAC07 /* English */,
+				A468EA612404C3E20003DBFE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -437,12 +562,12 @@
 		4FADC24308B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -462,6 +587,7 @@
 		4FADC24408B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -484,15 +610,18 @@
 		4FADC24708B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -509,7 +638,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -517,15 +645,18 @@
 		4FADC24808B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -540,8 +671,89 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A468EA442404C2710003DBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FUJX4L72NH;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = ../;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A468EA452404C2710003DBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = FUJX4L72NH;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = ../;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -562,6 +774,15 @@
 			buildConfigurations = (
 				4FADC24708B4156D00ABE55E /* Debug */,
 				4FADC24808B4156D00ABE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A468EA432404C2710003DBFE /* Build configuration list for PBXNativeTarget "LAMER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A468EA442404C2710003DBFE /* Debug */,
+				A468EA452404C2710003DBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

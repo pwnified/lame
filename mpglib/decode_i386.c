@@ -30,7 +30,7 @@
 /* $Id: decode_i386.c,v 1.22 2010/03/22 14:30:19 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 #ifdef STDC_HEADERS

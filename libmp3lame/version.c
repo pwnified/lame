@@ -32,7 +32,7 @@
 
 
 #ifdef HAVE_CONFIG_H
-# include <config.h>
+# include "config.h"
 #endif
 
 
@@ -47,7 +47,7 @@
 
 /*! Get the LAME version string. */
 /*!
-  \param void
+  
   \return a pointer to a string which describes the version of LAME.
 */
 const char *
@@ -79,7 +79,7 @@ get_lame_version(void)
 /*!
   It's mainly for inclusion into the MP3 stream.
 
-  \param void   
+     
   \return a pointer to the short version of the LAME version string.
 */
 const char *
@@ -109,7 +109,7 @@ get_lame_short_version(void)
 /*!
   It's used in the LAME VBR tag only.
 
-  \param void   
+     
   \return a pointer to the short version of the LAME version string.
 */
 const char *
@@ -141,7 +141,7 @@ get_lame_very_short_version(void)
   It's used in the LAME VBR tag only, limited to 9 characters max.
   Due to some 3rd party HW/SW decoders, it has to start with LAME.
 
-  \param void   
+     
   \return a pointer to the short version of the LAME version string.
  */
 const char*
@@ -156,7 +156,7 @@ get_lame_tag_encoder_short_version(void)
 
 /*! Get the version string for GPSYCHO. */
 /*!
-  \param void
+  
   \return a pointer to a string which describes the version of GPSYCHO.
 */
 const char *
@@ -181,7 +181,7 @@ get_psy_version(void)
 
 /*! Get the URL for the LAME website. */
 /*!
-  \param void
+  
   \return a pointer to a string which is a URL for the LAME website.
 */
 const char *

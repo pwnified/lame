@@ -24,7 +24,7 @@
 /* $Id: common.c,v 1.42 2017/08/19 14:20:27 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 #include <ctype.h>

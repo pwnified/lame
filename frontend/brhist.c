@@ -22,7 +22,7 @@
 /* $Id: brhist.c,v 1.58 2013/06/11 08:41:31 rbrito Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 /* basic #define's */

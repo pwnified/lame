@@ -32,7 +32,7 @@
 /* $Id: id3tag.c,v 1.80 2017/08/28 15:39:51 robert Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 #ifdef STDC_HEADERS
