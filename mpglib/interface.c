@@ -165,14 +165,14 @@ read_buf_byte(PMPSTR mp)
     int     pos;
 
 
-    pos = mp->tail->pos;
+    pos = (int)mp->tail->pos;
     while (pos >= mp->tail->size) {
         remove_buf(mp);
         if (!mp->tail) {
             lame_report_fnc(mp->report_err, "hip: Fatal error! tried to read past mp buffer\n");
             exit(1);
         }
-        pos = mp->tail->pos;
+        pos = (int)mp->tail->pos;
     }
 
     b = mp->tail->pnt[pos];
@@ -211,7 +211,7 @@ copy_mp(PMPSTR mp, int size, unsigned char *ptr)
 
     while (len < size && mp->tail) {
         int     nlen;
-        int     blen = mp->tail->size - mp->tail->pos;
+        int     blen = (int)mp->tail->size - (int)mp->tail->pos;
         if ((size - len) <= blen) {
             nlen = size - len;
         }
@@ -251,14 +251,14 @@ check_vbr_header(PMPSTR mp, int bytes)
     unsigned char xing[XING_HEADER_SIZE];
     VBRTAGDATA pTagData;
 
-    pos = buf->pos;
+    pos = (int)buf->pos;
     /* skip to valid header */
     for (i = 0; i < bytes; ++i) {
         while (pos >= buf->size) {
             buf = buf->next;
             if (!buf)
                 return -1; /* fatal error */
-            pos = buf->pos;
+            pos = (int)buf->pos;
         }
         ++pos;
     }
@@ -268,7 +268,7 @@ check_vbr_header(PMPSTR mp, int bytes)
             buf = buf->next;
             if (!buf)
                 return -1; /* fatal error */
-            pos = buf->pos;
+            pos = (int)buf->pos;
         }
         xing[i] = buf->pnt[pos];
         ++pos;
@@ -310,7 +310,7 @@ sync_buffer(PMPSTR mp, int free_match)
     if (!buf)
         return -1;
 
-    pos = buf->pos;
+    pos = (int)buf->pos;
     for (i = 0; i < mp->bsize; i++) {
         /* get 4 bytes */
 
@@ -323,7 +323,7 @@ sync_buffer(PMPSTR mp, int free_match)
                 return -1;
                 /* not enough data to read 4 bytes */
             }
-            pos = buf->pos;
+            pos = (int)buf->pos;
         }
         b[3] = buf->pnt[pos];
         ++pos;

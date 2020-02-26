@@ -251,7 +251,7 @@ IsVbrTag(const unsigned char *buf)
     return (isTag0 || isTag1);
 }
 
-#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(0xFFu << (n)) ) )
 
 static void
 setLameTagFrameHeader(lame_internal_flags const *gfc, unsigned char *buffer)
@@ -427,10 +427,10 @@ GetVbrTag(VBRTAGDATA * pTagData, const unsigned char *buf)
     }
 
     if (head_flags & TOC_FLAG) {
-        if (pTagData->toc != NULL) {
+   //     if (pTagData->toc != NULL) {
             for (i = 0; i < NUMTOCENTRIES; i++)
                 pTagData->toc[i] = buf[i];
-        }
+   //     }
         buf += NUMTOCENTRIES;
     }
 
@@ -985,7 +985,7 @@ lame_get_lametag_frame(lame_global_flags const *gfp, unsigned char *buffer, size
 
     /* Put total audio stream size, including Xing/LAME Header */
     stream_size = gfc->VBR_seek_table.nBytesWritten + gfc->VBR_seek_table.TotalFrameSize;
-    CreateI4(&buffer[nStreamIndex], stream_size);
+    CreateI4(&buffer[nStreamIndex], (uint32_t)stream_size);
     nStreamIndex += 4;
 
     /* Put TOC */
@@ -1032,7 +1032,7 @@ PutVbrTag(lame_global_flags const *gfp, FILE * fpStream)
     lame_internal_flags *gfc = gfp->internal_flags;
 
     long    lFileSize;
-    long    id3v2TagSize;
+    int    id3v2TagSize;
     size_t  nbytes;
     uint8_t buffer[MAXFRAMESIZE];
 
@@ -1055,7 +1055,7 @@ PutVbrTag(lame_global_flags const *gfp, FILE * fpStream)
      * the VBR tag data.
      */
 
-    id3v2TagSize = skipId3v2(fpStream);
+    id3v2TagSize = (int)skipId3v2(fpStream);
 
     if (id3v2TagSize < 0) {
         return id3v2TagSize;

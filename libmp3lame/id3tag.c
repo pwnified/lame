@@ -539,7 +539,7 @@ static int
 lookupGenre(char const* genre)
 {
     char   *str;
-    int     num = strtol(genre, &str, 10);
+    int     num = (int)strtol(genre, &str, 10);
     /* is the input a string or a valid number? */
     if (*str) {
         num = searchGenre(genre);
@@ -1495,7 +1495,7 @@ set_frame_custom2(unsigned char *frame, FrameDataNode const *node)
     size_t const n = sizeOfNode(node);
     if (n > 10) {
         frame = set_4_byte_value(frame, node->fid);
-        frame = set_4_byte_value(frame, (unsigned long) (n - 10));
+        frame = set_4_byte_value(frame, (uint32_t) (n - 10));
         /* clear 2-byte header flags */
         *frame++ = 0;
         *frame++ = 0;
@@ -1528,7 +1528,7 @@ set_frame_wxxx(unsigned char *frame, FrameDataNode const *node)
     size_t const n = sizeOfWxxxNode(node);
     if (n > 10) {
         frame = set_4_byte_value(frame, node->fid);
-        frame = set_4_byte_value(frame, (unsigned long) (n - 10));
+        frame = set_4_byte_value(frame, (uint32_t) (n - 10));
         /* clear 2-byte header flags */
         *frame++ = 0;
         *frame++ = 0;
@@ -1568,7 +1568,7 @@ set_frame_apic(unsigned char *frame, const char *mimetype, const unsigned char *
      */
     if (mimetype && data && size) {
         frame = set_4_byte_value(frame, FRAME_ID('A', 'P', 'I', 'C'));
-        frame = set_4_byte_value(frame, (unsigned long) (4 + strlen(mimetype) + size));
+        frame = set_4_byte_value(frame, (uint32_t) (4 + strlen(mimetype) + size));
         /* clear 2-byte header flags */
         *frame++ = 0;
         *frame++ = 0;

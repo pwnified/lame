@@ -27,7 +27,7 @@
 #include "mpglib.h"
 
 extern const int tabsel_123[2][3][16];
-extern const long freqs[9];
+extern const int freqs[9];
 
 extern real muls[27][64];
 

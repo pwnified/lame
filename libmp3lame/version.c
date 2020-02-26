@@ -198,7 +198,7 @@ get_lame_url(void)
   Writes the numerical representation of the version of LAME and
   GPSYCHO into lvp.
 
-  \param lvp    
+  \param lvp some lame pointer to a lame lame_version_t
 */
 void
 get_lame_version_numerical(lame_version_t * lvp)
