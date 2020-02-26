@@ -1,6 +1,6 @@
-/* config.h.  Generated from config.h.in by configure.  */
-/* config.h.in.  Generated from configure.in by autoheader.  */
 
+
+/* Modified arm64 config for iOS static library Xcode target */
 
 #ifndef LAME_CONFIG_H
 #define LAME_CONFIG_H
@@ -238,37 +238,37 @@
 #define PACKAGE_VERSION "3.100"
 
 /* The size of `double', as computed by sizeof. */
-#define SIZEOF_DOUBLE 8
+#define SIZEOF_DOUBLE sizeof(double)
 
 /* The size of `float', as computed by sizeof. */
-#define SIZEOF_FLOAT 4
+#define SIZEOF_FLOAT sizeof(float)
 
 /* The size of `int', as computed by sizeof. */
-#define SIZEOF_INT 4
+#define SIZEOF_INT sizeof(int)
 
 /* The size of `long', as computed by sizeof. */
-#define SIZEOF_LONG 8
+#define SIZEOF_LONG sizeof(long)
 
 /* The size of `long double', as computed by sizeof. */
 /* #undef SIZEOF_LONG_DOUBLE */
 
 /* The size of `long long', as computed by sizeof. */
-#define SIZEOF_LONG_LONG 8
+#define SIZEOF_LONG_LONG sizeof(long long)
 
 /* The size of `short', as computed by sizeof. */
-#define SIZEOF_SHORT 2
+#define SIZEOF_SHORT sizeof(short)
 
 /* The size of `unsigned int', as computed by sizeof. */
-#define SIZEOF_UNSIGNED_INT 4
+#define SIZEOF_UNSIGNED_INT sizeof(int)
 
 /* The size of `unsigned long', as computed by sizeof. */
-#define SIZEOF_UNSIGNED_LONG 8
+#define SIZEOF_UNSIGNED_LONG sizeof(unsigned long)
 
 /* The size of `unsigned long long', as computed by sizeof. */
-#define SIZEOF_UNSIGNED_LONG_LONG 8
+#define SIZEOF_UNSIGNED_LONG_LONG sizeof(unsigned long long)
 
 /* The size of `unsigned short', as computed by sizeof. */
-#define SIZEOF_UNSIGNED_SHORT 2
+#define SIZEOF_UNSIGNED_SHORT sizeof(unsigned short)
 
 /* If using the C implementation of alloca, define if you know the
    direction of stack growth for your system; otherwise it will be
