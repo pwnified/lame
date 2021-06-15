@@ -252,7 +252,7 @@ static const FLOAT ma_max_i1 = 3.6517412725483771;
 /* pow(10, (I2LIMIT + 1) / 16.0); */
 static const FLOAT ma_max_i2 = 31.622776601683793;
 /* pow(10, (MLIMIT) / 10.0); */
-static const FLOAT ma_max_m  = 31.622776601683793;
+static const __unused FLOAT ma_max_m  = 31.622776601683793;
 
     /*This is the masking table:
        According to tonality, values are going from 0dB (TMN)
