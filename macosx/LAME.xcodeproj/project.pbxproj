@@ -156,7 +156,7 @@
 		EA8CC0C709A39A5E001379B8 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
 		EA8CC0C809A39A5E001379B8 /* gain_analysis.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = gain_analysis.c; sourceTree = "<group>"; };
 		EA8CC0C909A39A5E001379B8 /* gain_analysis.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = gain_analysis.h; sourceTree = "<group>"; };
-		EA8CC0D509A39A5E001379B8 /* id3tag.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = id3tag.c; sourceTree = "<group>"; };
+		EA8CC0D509A39A5E001379B8 /* id3tag.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = id3tag.c; sourceTree = "<group>"; usesTabs = 0; };
 		EA8CC0D609A39A5E001379B8 /* id3tag.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = id3tag.h; sourceTree = "<group>"; };
 		EA8CC0D709A39A5E001379B8 /* l3side.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = l3side.h; sourceTree = "<group>"; };
 		EA8CC0D809A39A5E001379B8 /* lame-analysis.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "lame-analysis.h"; sourceTree = "<group>"; };
