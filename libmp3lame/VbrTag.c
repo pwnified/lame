@@ -77,7 +77,7 @@ static const char VBRTag1[] = { "Info" };
  * See 'CRC_update_lookup'
  * Uses the polynomial x^16+x^15+x^2+1 */
 
-static const unsigned int crc16_lookup[256] = {
+static const uint16_t crc16_lookup[256] = {
     0x0000, 0xC0C1, 0xC181, 0x0140, 0xC301, 0x03C0, 0x0280, 0xC241,
     0xC601, 0x06C0, 0x0780, 0xC741, 0x0500, 0xC5C1, 0xC481, 0x0440,
     0xCC01, 0x0CC0, 0x0D80, 0xCD41, 0x0F00, 0xCFC1, 0xCE81, 0x0E40,
@@ -584,7 +584,8 @@ CRC_update_lookup(uint16_t value, uint16_t crc)
 {
     uint16_t tmp;
     tmp = crc ^ value;
-    crc = (crc >> 8) ^ crc16_lookup[tmp & 0xff];
+//    crc = (crc >> 8) ^ crc16_lookup[tmp & 0xff]; // Getting "Index -1 out of bounds for type 'const unsigned int[256]'" for this.
+    crc = (crc >> 8) ^ crc16_lookup[tmp & 0xffu];
     return crc;
 }
 
