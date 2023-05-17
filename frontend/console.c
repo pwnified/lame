@@ -254,19 +254,19 @@ report_printf(const char *format, ...)
 }
 
 void
-console_flush()
+console_flush(void)
 {
     fflush(Console_IO.Console_fp);
 }
 
 void
-error_flush()
+error_flush(void)
 {
     fflush(Console_IO.Error_fp);
 }
 
 void
-report_flush()
+report_flush(void)
 {
     fflush(Console_IO.Report_fp);
 }
