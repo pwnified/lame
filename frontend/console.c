@@ -84,7 +84,7 @@ my_report_printing(FILE * fp, const char *format, va_list ap)
 #ifdef HAVE_TERMCAP
 
 static void
-get_termcap_string(char const* id, char* dest, size_t n)
+get_termcap_string(char* id, char* dest, size_t n)
 {
     char    tc[16];
     char   *tp = tc;
@@ -97,7 +97,7 @@ get_termcap_string(char const* id, char* dest, size_t n)
 }
 
 static void 
-get_termcap_number(char const* id, int* dest, int low, int high)
+get_termcap_number(char* id, int* dest, int low, int high)
 {
     int const val = tgetnum(id);
     if (low <= val && val <= high) {

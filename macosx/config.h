@@ -161,7 +161,7 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* have termcap */
-#define HAVE_TERMCAP 1
+//#define HAVE_TERMCAP 1
 
 /* Define to 1 if you have the <termcap.h> header file. */
 /* #undef HAVE_TERMCAP_H */
