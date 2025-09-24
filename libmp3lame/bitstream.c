@@ -178,7 +178,10 @@ putbits2(lame_internal_flags * gfc, int val, int j)
         assert(j < MAX_LENGTH); /* 32 too large on 32 bit machines */
         assert(bs->buf_bit_idx < MAX_LENGTH);
 
-        bs->buf[bs->buf_byte_idx] |= ((val >> j) << bs->buf_bit_idx);
+        //bs->buf[bs->buf_byte_idx] |= ((val >> j) << bs->buf_bit_idx);
+		// Left shift of 39145783 by 7 places cannot be represented in type 'int'
+
+		bs->buf[bs->buf_byte_idx] |= ( (unsigned int)(val >> j) ) << bs->buf_bit_idx;
         bs->totbit += k;
     }
 }
